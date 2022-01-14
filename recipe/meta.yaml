@@ -19,8 +19,11 @@ requirements:
   host:
     - pip
     - python >=3.6
+    - setuptools
+    - wheel
   run:
     - appdirs
+    - colorama
     - friendly-styles
     - friendly-traceback >=0.4.104
     - pygments >=2.6
@@ -31,6 +34,9 @@ test:
   imports:
     - friendly
     - friendly.idle
+    - friendly.ipython_common
+    - friendly.mu
+    - friendly.theme
   commands:
     - pip check
   requires:
