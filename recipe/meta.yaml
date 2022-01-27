@@ -33,7 +33,7 @@ requirements:
 test:
   imports:
     - friendly
-    - friendly.idle
+#     - friendly.idle
     - friendly.ipython_common
     - friendly.mu
     - friendly.theme
