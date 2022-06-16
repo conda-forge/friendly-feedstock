@@ -1,5 +1,5 @@
 {% set name = "friendly" %}
-{% set version = "0.5.27" %}
+{% set version = "0.5.32" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/friendly-{{ version }}.tar.gz
-  sha256: 025c7a5f4b8af9d24c93bbbd14a1808e11367b68bd12b663842a921b7b230955
+  sha256: 750bcaac244b5fafb876e10f38fb1f6c7280f63eeae9f64a425caaa96cbca395
 
 build:
   number: 0
