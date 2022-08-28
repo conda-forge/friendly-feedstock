@@ -1,5 +1,5 @@
 {% set name = "friendly" %}
-{% set version = "0.5.35" %}
+{% set version = "0.5.36" %}
 
 
 package:
@@ -8,12 +8,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/friendly-{{ version }}.tar.gz
-  sha256: 4d028576982bd7a396d7c643968224c1eb80c87161d8355f86c17d6c8011aabc
+  sha256: 96526ef2c89c6456dd53c19e603f61c75afc5cadd5482b16a49ba169a854e635
 
 build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - friendly = friendly.__main__:main
 
 requirements:
   host:
@@ -32,11 +34,9 @@ requirements:
 test:
   imports:
     - friendly
-    - friendly.ipython_common
-    - friendly.mu
-    - friendly.theme
   commands:
     - pip check
+    - friendly --help
   requires:
     - pip
 
