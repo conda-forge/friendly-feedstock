@@ -14,6 +14,8 @@ build:
   number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - friendly = friendly.__main__:main
 
 requirements:
   host:
@@ -32,11 +34,9 @@ requirements:
 test:
   imports:
     - friendly
-    - friendly.ipython_common
-    - friendly.mu
-    - friendly.theme
   commands:
     - pip check
+    - friendly --help
   requires:
     - pip
 
