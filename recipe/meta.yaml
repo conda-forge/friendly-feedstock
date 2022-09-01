@@ -25,7 +25,7 @@ requirements:
     - appdirs
     - colorama
     - friendly-styles
-    - friendly-traceback >=0.5.46
+    - friendly-traceback >=0.5.51
     - platformdirs
     - pygments >=2.6
     - python >=3.6
