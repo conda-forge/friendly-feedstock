@@ -1,5 +1,5 @@
 {% set name = "friendly" %}
-{% set version = "0.5.36" %}
+{% set version = "0.5.39" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/friendly-{{ version }}.tar.gz
-  sha256: 96526ef2c89c6456dd53c19e603f61c75afc5cadd5482b16a49ba169a854e635
+  sha256: 7f5ce2ba9fd64124b390ab6bb0537a16aeb14db9fcf1fe9d8e7e504fced656c1
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
     - appdirs
     - colorama
     - friendly-styles
-    - friendly-traceback >=0.5.46
+    - friendly-traceback >=0.5.51
     - platformdirs
     - pygments >=2.6
     - python >=3.6
