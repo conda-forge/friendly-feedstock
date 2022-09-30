@@ -1,5 +1,5 @@
 {% set name = "friendly" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/friendly-{{ version }}.tar.gz
-  sha256: 43a9a2e4ce1b57a0253f2fa882f72ad88fadaf45a7ac1e7c2384eb284f344cb1
+  sha256: 317e5e67c714d0957d40404ad1d50a43554c8b21a8e568024d3320e92f3fb3ae
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6.1
   run:
     - friendly-styles
-    - friendly-traceback >=0.6.0,<0.7.0
+    - friendly-traceback >=0.7.17
     - platformdirs
     - pygments >=2.6
     - python >=3.6.1
