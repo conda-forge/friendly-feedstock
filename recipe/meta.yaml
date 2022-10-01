@@ -23,7 +23,7 @@ requirements:
     - python >=3.6.1
   run:
     - friendly-styles
-    - friendly-traceback >=0.7.17
+    - friendly-traceback >=0.7.25
     - platformdirs
     - pygments >=2.6
     - python >=3.6.1
