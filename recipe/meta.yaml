@@ -21,13 +21,15 @@ requirements:
   host:
     - pip
     - python {{ python_min }}
+    - setuptools
+    - wheel
   run:
-    - friendly-styles
-    - friendly-traceback >=0.7.43
-    - platformdirs
-    - pygments >=2.6
     - python >={{ python_min }}
     - rich >=11
+    - pygments >=2.6
+    - friendly-traceback >=0.7.43
+    - friendly-styles >=0.2
+    - platformdirs    
 
 test:
   imports:
