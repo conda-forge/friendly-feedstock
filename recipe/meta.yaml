@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/friendly-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/friendly-{{ version }}.tar.gz
   sha256: 7417da84a9aff1a0a50c4bdc1dd594589abd3bf7333841c5313cf48616d5a9f2
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6.1
+    - python {{ python_min }}
   run:
     - friendly-styles
     - friendly-traceback >=0.7.43
     - platformdirs
     - pygments >=2.6
-    - python >=3.6.1
+    - python >={{ python_min }}
     - rich >=11
 
 test:
@@ -37,6 +37,7 @@ test:
     - friendly --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/friendly-traceback/friendly
